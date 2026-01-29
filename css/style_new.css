@@ -1,0 +1,297 @@
+/* ANIMATIONS */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.bounce-in {
+  animation: bounceIn 1.2s ease-out;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* BACKGROUND CIRCLE */
+.circle-bg {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background-color: #3a3d55;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* RESPONSIVE CIRCLE BG FOR MOBILE */
+@media (max-width: 640px) {
+  .circle-bg {
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+/* SOCIAL BUTTON STYLING */
+.social-btn {
+  background-color: white;
+  color: #2f3142;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #f0f0f0;
+}
+
+.social-btn:active {
+  transform: translateY(-1px);
+}
+
+/* FOCUS STYLES FOR ACCESSIBILITY */
+.social-btn:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* PROGRESS BAR */
+.progress {
+  width: 100%;
+  height: 8px;
+  background-color: #4b4e68;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+  border-radius: 999px;
+  animation: fillProgress 2s ease-out forwards;
+  width: 0;
+  animation-play-state: paused;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.animate .progress span {
+  animation-play-state: running;
+}
+
+@keyframes fillProgress {
+  to { width: var(--progress-width, 80%); }
+}
+
+/* ARTICLE/PROJECT CARDS HOVER EFFECTS */
+article {
+  transition: all 0.3s ease;
+}
+
+article:focus-within {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+/* BLOCKQUOTE STYLING */
+blockquote {
+  position: relative;
+}
+
+blockquote::before {
+  content: '"';
+  font-size: 48px;
+  opacity: 0.1;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+/* FORM ACCESSIBILITY IMPROVEMENTS */
+input:focus,
+textarea:focus {
+  background-color: #5a5d75;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* BUTTON ACCESSIBILITY */
+button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+/* REDUCE MOTION FOR ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* RESPONSIVE ADJUSTMENTS FOR TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .circle-bg {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* PRINT STYLES */
+@media print {
+  header,
+  footer {
+    display: none;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  a {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+}
+
+/* DARK MODE SYSTEM PREFERENCE */
+@media (prefers-color-scheme: dark) {
+  /* Already dark theme, but you can adjust if needed */
+  input,
+  textarea {
+    color-scheme: dark;
+  }
+}
+
+/* LINK STYLES FOR BETTER ACCESSIBILITY */
+a {
+  position: relative;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* TRANSITION SMOOTHNESS */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* HEADER/NAVBAR IMPROVEMENTS */
+header {
+  transition: all 0.3s ease;
+}
+
+nav ul li a {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* IMPROVE TEXT READABILITY */
+body {
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+/* FOOTER LINKS */
+footer a {
+  position: relative;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}

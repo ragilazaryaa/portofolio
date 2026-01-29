@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Ragil Azarya - Designer specializing in UX, website design, app design, and graphic design." />
+  <meta name="keywords" content="designer, UX, website design, app design, graphic design, portfolio" />
+  <meta name="author" content="Ragil Azarya" />
+  <meta name="theme-color" content="#2f3142" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <title>Ragil Azarya</title>
+</head>
+
+<body class="bg-[#2f3142] text-white min-h-screen">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-[#2f3142]/95 backdrop-blur-sm border-b border-gray-700 py-4 sm:py-6 fade-in">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Primary">
+      <!-- Logo/Avatar -->
+      <a href="#home" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+        <img src="image/ragil.jpg" alt="Ragil Azarya" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover" />
+        <span class="font-semibold text-sm sm:text-base hidden sm:inline">Ragil Azarya</span>
+      </a>
+
+      <!-- Menu -->
+      <ul class="flex gap-4 md:gap-8 text-sm text-gray-300">
+        <li><a href="#home" class="hover:text-white transition-colors duration-200">Home</a></li>
+        <li><a href="#portfolio" class="hover:text-white transition-colors duration-200">Portfolio</a></li>
+        <li><a href="#testimonials" class="hover:text-white transition-colors duration-200">Skills</a></li>
+        <li><a href="#about" class="hover:text-white transition-colors duration-200">About</a></li>
+        <li><a href="#contact" class="hover:text-white transition-colors duration-200">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+
+    <section class="flex flex-col md:flex-row items-center gap-8 md:gap-16 animate-on-scroll" aria-label="Hero section">
+
+      <!-- TEXT -->
+      <article class="max-w-xl slide-in-left flex-1">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+          Ragil Azarya
+        </h1>
+
+        <p class="text-gray-300 leading-relaxed mb-8 text-base md:text-lg">
+          My name is Ragil Azarya , a fresh graduate in University Christian Immanuel majoring in Informatics. 
+        </p>
+
+        <!-- Social Links -->
+        <nav class="flex flex-wrap gap-3 md:gap-4" aria-label="Social media">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn text-sm md:text-base"><i class="fab fa-github mr-2"></i>GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn text-sm md:text-base"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+          <a href="mailto:ragilazarya21@gmail.com" class="social-btn text-sm md:text-base"><i class="fas fa-envelope mr-2"></i>Email</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn text-sm md:text-base"><i class="fab fa-instagram mr-2"></i>Instagram</a>
+        </nav>
+      </article>
+
+      <!-- IMAGE -->
+      <figure class="relative bounce-in flex-1 min-w-0">
+        <div class="circle-bg"></div>
+        <img
+          src="image/ragil.jpg"
+          alt="Ragil Azarya - Designer"
+          class="relative z-10 rounded-lg w-full max-w-xs md:max-w-sm lg:max-w-md mx-auto md:mx-0 object-cover"
+        />
+      </figure>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-12 sm:py-16 md:py-24 animate-on-scroll">
+      <div class="text-center">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 slide-in-left">About Me</h2>
+        <p class="text-gray-300 max-w-3xl mx-auto leading-relaxed slide-in-right text-base md:text-lg">
+          Hello! I'm Ragil Azarya, a passionate designer specializing in UX, website design, app design, and graphic design.
+          With a keen eye for detail and a commitment to excellence, I strive to create visually stunning and user-friendly designs
+          that leave a lasting impression. My goal is to bring innovative ideas to life and help businesses stand out in the digital world.
+          Let's work together to turn your vision into reality!
+        </p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="py-12 sm:py-16 md:py-24 animate-on-scroll">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold slide-in-left">Portfolio</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <article class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-300 hover:shadow-lg fade-in group">
+          <h3 class="text-lg md:text-xl font-semibold mb-3 group-hover:text-blue-400 transition-colors">Project 1</h3>
+          <p class="text-gray-300 mb-4 text-sm md:text-base leading-relaxed">Description of project 1.</p>
+          <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm md:text-base font-medium transition-colors">View Project →</a>
+        </article>
+        <article class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-300 hover:shadow-lg fade-in group" style="animation-delay: 0.2s">
+          <h3 class="text-lg md:text-xl font-semibold mb-3 group-hover:text-blue-400 transition-colors">Project 2</h3>
+          <p class="text-gray-300 mb-4 text-sm md:text-base leading-relaxed">Description of project 2.</p>
+          <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm md:text-base font-medium transition-colors">View Project →</a>
+        </article>
+        <article class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-300 hover:shadow-lg fade-in group" style="animation-delay: 0.4s">
+          <h3 class="text-lg md:text-xl font-semibold mb-3 group-hover:text-blue-400 transition-colors">Project 3</h3>
+          <p class="text-gray-300 mb-4 text-sm md:text-base leading-relaxed">Description of project 3.</p>
+          <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm md:text-base font-medium transition-colors">View Project →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-12 sm:py-16 md:py-24 animate-on-scroll">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold slide-in-left">Testimonials</h2>
+      </div>
+      <div class="space-y-6 md:space-y-8 max-w-3xl mx-auto">
+        <blockquote class="bg-gray-800 p-6 md:p-8 rounded-lg border-l-4 border-blue-500 fade-in">
+          <p class="text-gray-300 text-base md:text-lg mb-4 leading-relaxed">
+            "Ragil is an exceptional designer with great creativity."
+          </p>
+          <footer class="text-gray-400 text-sm md:text-base font-medium">— Client 1</footer>
+        </blockquote>
+        <blockquote class="bg-gray-800 p-6 md:p-8 rounded-lg border-l-4 border-blue-500 fade-in" style="animation-delay: 0.2s">
+          <p class="text-gray-300 text-base md:text-lg mb-4 leading-relaxed">
+            "Highly recommend for any design project."
+          </p>
+          <footer class="text-gray-400 text-sm md:text-base font-medium">— Client 2</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="py-12 sm:py-16 md:py-24 max-w-3xl mx-auto animate-on-scroll" aria-label="Skills">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 slide-in-left">Skills</h2>
+      <div class="space-y-6 md:space-y-8">
+        <div class="animate-on-scroll fade-in">
+          <div class="flex justify-between items-center mb-2">
+            <label for="skill-ux" class="text-base md:text-lg font-medium">UX Design</label>
+            <span class="text-sm text-gray-400">80%</span>
+          </div>
+          <div class="progress" id="skill-ux">
+            <span style="--progress-width: 80%"></span>
+          </div>
+        </div>
+
+        <div class="animate-on-scroll fade-in" style="animation-delay: 0.2s">
+          <div class="flex justify-between items-center mb-2">
+            <label for="skill-web" class="text-base md:text-lg font-medium">Website Design</label>
+            <span class="text-sm text-gray-400">85%</span>
+          </div>
+          <div class="progress" id="skill-web">
+            <span style="--progress-width: 85%"></span>
+          </div>
+        </div>
+
+        <div class="animate-on-scroll fade-in" style="animation-delay: 0.4s">
+          <div class="flex justify-between items-center mb-2">
+            <label for="skill-app" class="text-base md:text-lg font-medium">App Design</label>
+            <span class="text-sm text-gray-400">75%</span>
+          </div>
+          <div class="progress" id="skill-app">
+            <span style="--progress-width: 75%"></span>
+          </div>
+        </div>
+
+        <div class="animate-on-scroll fade-in" style="animation-delay: 0.6s">
+          <div class="flex justify-between items-center mb-2">
+            <label for="skill-graphic" class="text-base md:text-lg font-medium">Graphic Design</label>
+            <span class="text-sm text-gray-400">90%</span>
+          </div>
+          <div class="progress" id="skill-graphic">
+            <span style="--progress-width: 90%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-12 sm:py-16 md:py-24 animate-on-scroll">
+      <div class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold slide-in-left">Contact Me</h2>
+        <p class="text-gray-400 mt-4 text-base md:text-lg">Let's discuss your next project</p>
+      </div>
+      <div class="max-w-2xl mx-auto">
+        <div class="text-center mt-8">
+          <p class="text-gray-400 mb-4 text-sm">Or connect with me on WhatsApp</p>
+          <a href="https://wa.me/6285239057925?text=Hello%20Ragil" target="_blank" rel="noopener noreferrer" class="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 text-base"><i class="fab fa-whatsapp mr-2"></i>Contact via WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-900 border-t border-gray-700 py-8 md:py-12 text-center text-gray-400">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <nav class="flex justify-center gap-6 mb-6" aria-label="Footer">
+        <a href="#home" class="hover:text-white transition-colors">Home</a>
+        <a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a>
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+      <p class="text-sm mb-2">&copy; 2024 Ragil Azarya. All rights reserved.</p>
+      <!-- <p class="text-xs text-gray-500">Designed and built with care</p> -->
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
